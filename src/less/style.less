@@ -1,0 +1,126 @@
+@bootstrap-path: "../../bower_components/bootstrap/less";
+
+//Import necessary bootstrap modules
+
+@import "@{bootstrap-path}/scaffolding.less";
+@import "@{bootstrap-path}/variables.less";
+@import "@{bootstrap-path}/mixins.less";
+@import "@{bootstrap-path}/utilities.less";
+@import "@{bootstrap-path}/grid.less";
+@import "@{bootstrap-path}/navs.less";
+@import "@{bootstrap-path}/navbar.less";
+@import "@{bootstrap-path}/forms.less";
+@import "@{bootstrap-path}/alerts.less";
+@import "@{bootstrap-path}/type.less";
+
+//Varibles
+
+@dark: #1c1b1c;
+@red:  #f45d5d;
+@blue: #24c4d5;
+@grey: #d9d4d9;
+
+//Samples styles
+
+body{
+  font-family: 'Old Standard TT', serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: @red;
+  &:hover {color: #e35151;}
+}
+
+h1 { margin-top: 20px; margin-bottom: 10px;}
+h3 { font-weight: bold;padding: 10px 0; color: @blue;}
+h4 { font-size: 30px; padding: 14px 0;}
+
+
+pre {
+  background: @dark;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.page-title {
+  padding: 40px 0 110px 0;
+}
+
+header {
+  background-color: @blue;
+  h1 {
+    font-weight: 700;
+    font-size: 64px;
+  }
+  h2 {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 28px;
+    letter-spacing: 1.2px;
+  }
+}
+
+.menu {
+  background: @dark;
+}
+.nav {
+  li a {
+    color: #fff;
+    font-size: 22px;
+    font-style: italic;
+
+    &:hover, &:focus {
+      background-color: @grey;
+      color: @dark;
+    }
+  }
+}
+.page-content {
+  padding: 60px 50px;
+  min-height: 600px;
+}
+.hidden {
+  display: none;
+}
+.vertical-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.panel.panel-default {
+  width: 100%;
+  margin: 30px 0;
+  border: none;
+  box-shadow: 2px 2px 15px #d0cece;
+  border-radius: 0;
+  padding: 30px;
+}
+
+.btn-default {
+  color: #fff;
+  border-color: transparent;
+  font-style: italic;
+  background-color: @dark;
+  font-size: 16px;
+  width: 100%;
+}
+.btn-default.disabled,
+.btn-default[disabled] {
+  background-color: @grey;
+  border-color: transparent;
+}
+
+footer .footer-bottom {
+  background: @dark;
+  color: #fff;
+  margin-top: 30px;
+  padding: 10px 0;
+  font-size: 15px;
+  address {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+}
+

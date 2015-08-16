@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lading page | Angular.js and Phpmailer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="js/script.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-app="landingApp">
+     <header>
+         <div ng-include="'views/header.html'"></div>
+     </header>
+     <div class="container page-content">
+         <div ng-view></div>
+     </div>
+     <footer>
+         <div ng-include="'views/footer.html'"></div>
+     </footer>
+</body>
+</html>
